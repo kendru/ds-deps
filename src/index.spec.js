@@ -109,7 +109,6 @@ describe('dependency graphs', () => {
         
         it('should generate a topological sort of the graph', () => {
             const topoSorted = g.topoSort();
-            console.log(g.topoSort());
 
             [
                 ['soil', 'grain'],
