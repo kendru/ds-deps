@@ -1,15 +1,16 @@
 {
   "name": "ds-deps",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Dead-simple dependency graph",
   "files": [
     "lib"
   ],
   "main": "lib/index.js",
   "scripts": {
+    "clean": "rm -rf lib",
     "build": "tsc",
     "test": "jest",
-    "prepublish": "npm run build && npm test"
+    "prepublish": "npm run clean && npm run build && npm test"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

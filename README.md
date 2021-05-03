@@ -15,7 +15,7 @@ little more than a partial port of that library from Clojure to JavaScript.
 ### Usage
 
 ```javascript
-const Graph = require('ds-deps').Graph;
+import { Graph } from 'ds-deps';
 
 const g = new Graph();
 g.dependOn('cake', 'eggs');
